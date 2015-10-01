@@ -1,0 +1,71 @@
+@font-face {
+    font-family: webly-ui;
+    src: url(../fonts/weblysleekuil.ttf);
+}
+
+body {
+	background-image: url('../images/veggies.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    font-family: webly-ui;
+}
+
+.shopping-list {
+	width: 30em;
+	height: 40em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5em;
+}
+
+.list-header {
+	color: white;
+	font-size: 3em;
+	text-align: left;
+	border-bottom: 1px solid white;
+	padding-bottom: .25em;
+	margin: 0;
+	text-shadow: 1px 1px 2px black;
+}
+
+.add-item-box {
+	font-size: 2em;
+	text-align: left;
+	margin-top: 2em;
+	border: 1px solid white;
+	color: white;
+}
+
+/* Define paragraphs as non-child, so they will display with full opacity in front of translucent divs */
+
+p.list-item, p.struck-item, p.delete-me {
+	color: white;
+	font-size: 2em;
+	text-align: left;
+	margin: 0;
+	display: inline-block;
+}
+
+p.list-item:hover, p.struck-item:hover, p.delete-me:hover {
+	/* text-shadow: 0px 0px 1px; */
+	cursor: pointer;
+}
+
+p.struck-item {
+	text-decoration: line-through;
+}
+
+p.delete-me {
+	float: right;
+}
+
+p.add-item-text {
+	margin-left: 0.1em;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+	opacity: 0.3;
+}
+
+
