@@ -29,11 +29,7 @@ body {
 }
 
 .add-item-box {
-	font-size: 2em;
-	text-align: left;
-	margin-top: 2em;
-	border: 1px solid white;
-	color: white;
+
 }
 
 /* Define paragraphs as non-child, so they will display with full opacity in front of translucent divs */
@@ -59,13 +55,18 @@ p.delete-me {
 	float: right;
 }
 
-p.add-item-text {
+input.add-item-text {
 	margin-left: 0.1em;
 	margin-right: 0;
-	margin-top: 0;
+	margin-top: 2em;
 	margin-bottom: 0;
 	color: white;
-	opacity: 0.3;
+	background: none;
+	width: 100%;
+	font-size: 2em;
+	text-align: left;
+	border: 1px solid white;
+	outline: none;
 }
 
 
