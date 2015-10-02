@@ -28,13 +28,13 @@ body {
 	text-shadow: 1px 1px 2px black;
 }
 
-.add-item-box {
-
+.bigbox {
+	min-height: 20em;
 }
 
 /* Define paragraphs as non-child, so they will display with full opacity in front of translucent divs */
 
-p.list-item, p.struck-item, p.delete-me {
+div.list-item, div.struck-item, div.delete-me {
 	color: white;
 	font-size: 2em;
 	text-align: left;
@@ -42,23 +42,22 @@ p.list-item, p.struck-item, p.delete-me {
 	display: inline-block;
 }
 
-p.list-item:hover, p.struck-item:hover, p.delete-me:hover {
+div.list-item:hover, div.struck-item:hover, div.delete-me:hover {
 	/* text-shadow: 0px 0px 1px; */
 	cursor: pointer;
 }
 
-p.struck-item {
+div.struck-item {
 	text-decoration: line-through;
 }
 
-p.delete-me {
+div.delete-me {
 	float: right;
 }
 
 input.add-item-text {
 	margin-left: 0.1em;
 	margin-right: 0;
-	margin-top: 2em;
 	margin-bottom: 0;
 	color: white;
 	background: none;
