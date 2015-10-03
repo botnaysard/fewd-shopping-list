@@ -3,16 +3,21 @@
     src: url(../fonts/weblysleekuil.ttf);
 }
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
-	background-image: url('../images/veggies.jpg');
+	background-image: url('../images/foodbackground.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
     font-family: webly-ui;
 }
 
 .shopping-list {
 	width: 30em;
-	height: 40em;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 5em;
@@ -32,9 +37,7 @@ body {
 	min-height: 20em;
 }
 
-/* Define paragraphs as non-child, so they will display with full opacity in front of translucent divs */
-
-div.list-item, div.struck-item, div.delete-me {
+.list-item, .struck-item, .delete-me {
 	color: white;
 	font-size: 2em;
 	text-align: left;
@@ -42,30 +45,68 @@ div.list-item, div.struck-item, div.delete-me {
 	display: inline-block;
 }
 
-div.list-item:hover, div.struck-item:hover, div.delete-me:hover {
-	/* text-shadow: 0px 0px 1px; */
+.list-item:hover, .delete-me:hover {
 	cursor: pointer;
 }
 
-div.struck-item {
+.struck-item {
 	text-decoration: line-through;
 }
 
-div.delete-me {
+.delete-me {
 	float: right;
 }
 
 input.add-item-text {
-	margin-left: 0.1em;
+	padding-left: 0.2em;
+
 	margin-right: 0;
 	margin-bottom: 0;
 	color: white;
-	background: none;
+	background: url('../images/milky.png');
 	width: 100%;
 	font-size: 2em;
 	text-align: left;
-	border: 1px solid white;
+	border-bottom: 1px solid white;
+	border-top: none;
+	border-right: none;
+	border-left: none;
 	outline: none;
 }
 
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+footer {
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15em;
+	color: #ccc;
+	font-size: 1em;
+	text-align: center;
+}
+
+footer p {
+	margin-top: -1em;
+}
+
+a:link, a:visited, a:active, a:hover { 
+	text-decoration: underline;
+	cursor: pointer;
+	color: #ccc;
+}
 
