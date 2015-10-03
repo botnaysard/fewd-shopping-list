@@ -59,7 +59,6 @@ body {
 
 input.add-item-text {
 	padding-left: 0.2em;
-
 	margin-right: 0;
 	margin-bottom: 0;
 	color: white;
@@ -110,3 +109,32 @@ a:link, a:visited, a:active, a:hover {
 	color: #ccc;
 }
 
+@media only screen and (max-width: 320px) {
+
+	.shopping-list {
+		margin-top: 1em;
+	}
+
+	footer {
+		margin-top: 5em;
+		margin-bottom: 15em;
+	}
+
+}
+
+@media only screen and (max-height: 320px) {
+
+	.bigbox {
+		min-height: 5em;
+	}
+
+	.shopping-list {
+		margin-top: 1em;
+	}
+
+	footer {
+		margin-top: 2em;
+		margin-bottom: 15em;
+	}
+
+}
